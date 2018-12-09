@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">City Quiz</string>
+    <string name="instructions">drag the marker to where you think the city is located.</string>
+    <string name="seeStats">See Your Stats</string>
+    <string name="startNew">Restart Game</string>
+</resources>
