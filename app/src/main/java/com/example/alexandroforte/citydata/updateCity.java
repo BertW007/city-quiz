@@ -14,7 +14,6 @@ public class updateCity extends AsyncTask<String,Void,CityRecord> {
     public Context context;
     public CityRecord city;
 
-    // Constructor providing a reference to the views in MainActivity
     public updateCity(RecyclerView recyclerView, RecyclerViewAdapter adapter, Context context, CityRecord city) {
         this.db = Room.databaseBuilder(context, AppDatabase.class, db.NAME).fallbackToDestructiveMigration().build();
         this.recyclerView = recyclerView;

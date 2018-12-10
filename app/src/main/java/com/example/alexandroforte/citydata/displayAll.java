@@ -27,8 +27,6 @@ public class displayAll extends AsyncTask<Void,Void,List<CityRecord>> {
 
         items = db.databaseInterface().getAllItems();
         System.out.println("in displayAll item size: " + items.size() );
-        // Return the raw response to the onPostExecute
-        //BUT remember, items is a local Arraylist for this thread
         return items;
     }
 

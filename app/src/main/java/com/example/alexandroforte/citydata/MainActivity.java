@@ -97,7 +97,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // --- Switch on the item ID that was clicked
         switch (item.getItemId()) {
             case R.id.seeStats:
                 goToStats();
@@ -187,7 +186,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String s) {
-            items = new ArrayList<CityRecord>();
+            items = new ArrayList<>();
             String toponymName;
             int geonameId;
             double lat;
@@ -195,12 +194,8 @@ public class MainActivity extends AppCompatActivity {
             String wiki;
 
             try {
-                // Convert the response into a JSON object.
                 JSONObject jsonObject = new JSONObject(s);
-
-                // Get the JSONArray of book items.
                 JSONArray itemsArray = jsonObject.getJSONArray("geonames");
-
                 int i = 0;
 
                 while (i < itemsArray.length()) {

@@ -11,8 +11,8 @@ import android.arch.persistence.room.RoomDatabase;
 @Database(entities = {CityRecord.class},version = 5)
 public abstract class AppDatabase extends RoomDatabase {
 
-    // Declare your data access objects as abstract
     public abstract DatabaseInterface databaseInterface();
+
     // Database name to be used
     public static final String NAME = "MyCities";
 

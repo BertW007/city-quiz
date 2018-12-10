@@ -150,13 +150,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return mData.size();
     }
 
-    public CityRecord getFirstItem() {
-        return mData.get(0);
-    }
-
-    public List<CityRecord> getAllItems() {
-        return mData;
-    }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView name;

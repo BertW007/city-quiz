@@ -100,9 +100,6 @@ public class StatsActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        //this will catch the <- arrow
-        //and return to MainActivity
-        //needed since we use fragments to map sites
         switch (item.getItemId()) {
             case android.R.id.home:
                 goBackToMain();

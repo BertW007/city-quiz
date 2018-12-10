@@ -40,7 +40,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     private double lat1, lon1;
     private CityRecord city;
     Geocoder geocoder = null;
-    ArrayList<String> locations; //will contain all the locations
 
     TextView welcomeText;
     Button submitBtn;
@@ -61,10 +60,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         submitBtn.setEnabled(false);
 
         geocoder = new Geocoder(this);
-        locations = new ArrayList<String>();
 
-        // This fetches the addresses from a bundle and places them in an ArrayList
-        // ArrayList will be used later by GeoCoder
         Intent arts = getIntent();
         Bundle bundle = arts.getExtras();
 
@@ -75,7 +71,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         lat1 = city.getLat();
         lon1 = city.getLon();
 
-        //gets the maps to load
         MapFragment mf = (MapFragment) getFragmentManager().findFragmentById(R.id.the_map);
         mf.getMapAsync(this);
 
@@ -89,9 +84,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        //this will catch the <- arrow
-        //and return to MainActivity
-        //needed since we use fragments to map sites
         switch (item.getItemId()) {
             case android.R.id.home:
                 goBackToMain();
