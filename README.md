@@ -1,8 +1,6 @@
 # City Quiz
 
-<i><center>
-Android application that quizzes knowledge of where cities are on a map.
-</center></i>
+*Android application that quizzes knowledge of where cities are on a map.*
 
 #### Features:
 - Over 170 cities around the world to try to locate on a map.
