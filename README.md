@@ -20,7 +20,7 @@ Android application that quizzes knowledge of where cities are on a map.
 - **Recycler View** to store the various cities.
 
 ### Screenshots:
-![Main Activity](pics/main.png =240x400)
+![Main Activity](pics/main.png=240x400)
 
 ![Map Activity](pics/map.png =240x400)
 
