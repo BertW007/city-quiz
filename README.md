@@ -22,7 +22,5 @@ Android application that quizzes knowledge of where cities are on a map.
 ### Screenshots:
 
 <img src="pics/main.png" alt="Main Activity" width="240"/>
-
-![Map Activity](pics/map.png =240x400)
-
-![Stats Activity](pics/stats.png =240x400)
+<img src="pics/map.png" alt="Map Activity" width="240"/>
+<img src="pics/stats.png" alt="Stats Activity" width="240"/>
