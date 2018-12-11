@@ -12,6 +12,7 @@
 
 #### Technology Used:
 - **Google Maps API** leveraging the satellite map and pin to answer questions.
+- **GeoNames API** for getting data on cities around the world.
 - **Room Persistence Library** for storing data locally and making queries on the data.
 - **Implicit and Explicit Intents** to launch activities like the map and stats page as well as allowing users to visit the city's Wikipedia page.
 - **Async Tasks** to do data fetching and database operations.
